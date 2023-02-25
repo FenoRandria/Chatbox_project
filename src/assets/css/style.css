@@ -1,0 +1,659 @@
+@font-face {
+  font-family: "poppins";
+  src: url("poppins/poppins.TTF") format("truetype");
+}
+#pageCol3 #content::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+#pageCol3 #content::-webkit-scrollbar-track {
+  background: #1a202f;
+  /* box-shadow: inset 0.5em 0 0 #fdffff; */
+}
+
+#pageCol3 #content::-webkit-scrollbar-thumb {
+  background: rgba(203, 255, 248, 0.3607843137);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+#pageCol3 #content::-webkit-scrollbar-thumb:hover {
+  background: #F8305C;
+  transition: 0.5s;
+}
+
+body {
+  font-family: "poppins";
+  margin: 0 auto;
+  padding: auto;
+  background-color: #111620;
+}
+
+#page {
+  height: 768px;
+  display: flex;
+  width: 100%;
+  background-color: #111620;
+  margin: auto;
+}
+
+#pageCol1 {
+  width: 75px;
+  height: 768px;
+  background-color: #1a202f;
+  position: fixed;
+}
+
+#pageCol2 {
+  width: 285px;
+  height: 768px;
+  background-color: #1a202f;
+  margin-left: 75px;
+}
+
+#pageCol3 {
+  width: 610px;
+  height: 560px;
+  margin-left: 360px;
+  position: fixed;
+  background-color: #1a202f;
+}
+
+#pageCol4 {
+  width: 340px;
+  height: 630px;
+  margin-left: 970px;
+  position: fixed;
+  background-color: #111620;
+}
+
+#pageCol1 .pdp {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 11px;
+}
+
+#pageCol1 > div:nth-child(2) {
+  margin-top: 75px;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 60%;
+}
+
+#pageCol1 > div:nth-child(3) {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: #FF3957;
+  opacity: 60%;
+}
+
+#pageCol1 > div:nth-child(4) {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 60%;
+}
+
+#pageCol1 .pdp img {
+  width: 100%;
+}
+
+#pageCol2 .header {
+  width: 100%;
+  height: 80px;
+  background-color: #1a202f;
+  margin-top: -20px;
+  display: flex;
+}
+
+#pageCol2 .header h1 {
+  align-items: center;
+  color: #ffffff;
+  font-size: 24px;
+  margin: auto;
+}
+
+#pageCol2 .allMessage {
+  width: 285px;
+  height: 690px;
+}
+
+#pageCol2 .allMessage {
+  background-color: #1a202f;
+  width: 285px;
+  height: 690px;
+}
+
+.membres {
+  width: 285px;
+  height: 80px;
+  display: flex;
+  background-color: rgba(17, 22, 32, 0.5607843137);
+  margin-top: 10px;
+}
+
+.membres .pdp {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 20px 10px;
+}
+
+.membres .pdp img {
+  width: 100%;
+}
+
+.membres .soratra {
+  width: 60%;
+  height: 80px;
+}
+
+.membres .soratra h3 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.membres .soratra p {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 300;
+  margin-top: -14px;
+  opacity: 65%;
+}
+
+.membres .time {
+  width: 20%;
+  height: 80px;
+}
+
+.membres .time h4 {
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.membres .time p {
+  text-align: center;
+  margin: auto;
+  border-radius: 100%;
+  width: 20px;
+  background: linear-gradient(134deg, #F8305C, #8024CC);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#pageCol3 #header {
+  width: 610px;
+  height: 70px;
+  background-color: rgba(17, 22, 32, 0.5607843137);
+  display: flex;
+}
+
+#pageCol3 #header .fleche {
+  width: 70px;
+  height: 70px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+#pageCol3 #header .fleche i {
+  text-align: center;
+  font-size: 26px;
+  transition: 0.5s;
+}
+
+#pageCol3 #header .fleche:hover i {
+  letter-spacing: 20px;
+}
+
+#pageCol3 #header .pdp {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 20px 10px;
+}
+
+#pageCol3 #header h3 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#pageCol3 #header p {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 300;
+  margin-top: -14px;
+  opacity: 65%;
+}
+
+#pageCol3 #header .pdp img {
+  width: 100%;
+}
+
+#pageCol3 #content {
+  width: 610px;
+  height: 500px;
+  background-color: #1a202f;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+#input {
+  width: 610px;
+  height: 60px;
+  background-color: #111620;
+  position: fixed;
+}
+
+#input #sendChat {
+  background-color: #1a202f;
+  width: 380px;
+  height: 40px;
+  margin: 10px 35px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 40px;
+  color: white;
+}
+
+#input #sendChat[type=text]:focus {
+  border-image: linear-gradient(134deg, #F8305C, #8024CC);
+  outline: none;
+  box-shadow: 0 0 5px #FF9A5D;
+}
+
+#input i {
+  font-size: 26px;
+  color: #FF9A5D;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#input i:hover {
+  font-size: 28px;
+  color: #FF3957;
+  transition: 0.3s;
+}
+
+#chat1 {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#chat1 .pdp {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 32px 10px;
+}
+
+#chat1 .pdp img {
+  width: 100%;
+}
+
+#chat1 .soratra {
+  word-break: break-word;
+  width: 310px;
+}
+
+#chat1 .soratra p {
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px;
+  background: linear-gradient(134deg, #FF9A5D, #FF3957);
+  border-radius: 20px 20px 20px 0px;
+  font-weight: 300;
+}
+
+#chat1 .soratra h4 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: -9px;
+}
+
+#chat1 .soratra > p:nth-child(2) {
+  margin-top: -10px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#chat1 .soratra > p:nth-child(3) {
+  margin-top: -10px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#chat1 .soratra > p:nth-child(4) {
+  margin-top: -10px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#chat1 .soratra > p:last-child {
+  margin-top: -10px;
+  border-radius: 0px 20px 20px 20px;
+}
+
+#chat1 .soratra > p:first-child {
+  border-radius: 20px 20px 20px 0px;
+}
+
+#chat2 {
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  align-self: end;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+#chat2 .pdp {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 32px 10px;
+}
+
+#chat2 .pdp img {
+  width: 100%;
+}
+
+#chat2 .soratra {
+  word-break: break-word;
+  width: 310px;
+}
+
+#chat2 .soratra p {
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px;
+  background: linear-gradient(134deg, #F8305C, #8024CC);
+  border-radius: 20px 20px 20px 0px;
+  font-weight: 300;
+}
+
+#chat2 .soratra h4 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: -9px;
+}
+
+#chat2 .soratra > p:nth-child(2) {
+  margin-top: -10px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#chat2 .soratra > p:nth-child(3) {
+  margin-top: -10px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#chat2 .soratra > p:nth-child(4) {
+  margin-top: -10px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#chat2 .soratra > p:last-child {
+  margin-top: -10px;
+  border-radius: 20px 0px 20px 20px;
+}
+
+#chat2 .soratra > p:first-child {
+  border-radius: 20px 20px 0px 20px;
+}
+
+#chat3 .soratra h4 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: -9px;
+  text-align: right;
+}
+
+#pageCol4 #top {
+  width: 340px;
+  height: 320px;
+}
+
+#pageCol4 #top .header {
+  width: 340px;
+  height: 70px;
+  background-color: #111620;
+}
+
+#pageCol4 #top .pdp {
+  width: 150px;
+  height: 150px;
+  background-color: #ecd971;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#pageCol4 #top .pdp img {
+  width: 100%;
+}
+
+#pageCol4 #top .name {
+  width: 100%;
+  height: 100px;
+}
+
+#pageCol4 #top .name h5 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#pageCol4 #top .name p {
+  text-align: center;
+  color: yellowgreen;
+  font-size: 10px;
+  margin-top: -22px;
+  font-weight: 300;
+}
+
+#pageCol4 #bottom {
+  width: 340px;
+  height: 308px;
+}
+
+#pageCol4 #bottom .miniTitle {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 300;
+}
+
+#pageCol4 #bottom .miniTitle h5 {
+  margin-left: 20px;
+}
+
+#pageCol4 #bottom .miniTitle p {
+  text-align: center;
+  border-radius: 100%;
+  width: 30px;
+  height: 27px;
+  padding-top: 3px;
+  align-self: center;
+  margin-right: 27px;
+  background: linear-gradient(134deg, #F8305C, #8024CC);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#pageCol4 #bottom .sary {
+  width: 340px;
+  height: 298px;
+  display: inline;
+}
+
+#pageCol4 #bottom #sarymini {
+  width: 60px;
+  height: 60px;
+  margin-left: 40px;
+  background-color: #1a202f;
+  float: left;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#pageCol4 #bottom #sarymini img {
+  width: 160%;
+}
+
+@media screen and (max-width: 970px) {
+  #pageCol4 {
+    display: none;
+  }
+  #input {
+    width: 80%;
+  }
+  #input #sendChat {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 962px) and (min-width: 725px) {
+  #pageCol3 {
+    width: 60%;
+  }
+  #pageCol3 #header {
+    width: 100%;
+  }
+  #pageCol3 #content {
+    width: 100%;
+  }
+  #pageCol4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 403px) {
+  #pageCol4 {
+    display: none;
+  }
+  #pageCol3 {
+    display: none;
+  }
+  #pageCol2 {
+    width: 81%;
+  }
+  .membres {
+    width: 108%;
+  }
+}
+#hidden {
+  display: none;
+}
+
+#pageCol3Resposive {
+  display: inline-block;
+  margin-left: 0px;
+  width: 610px;
+  height: 560px;
+  position: fixed;
+  background-color: #1a202f;
+}
+
+#pageCol3Resposive #header {
+  width: 610px;
+  height: 70px;
+  background-color: rgba(17, 22, 32, 0.5607843137);
+  display: flex;
+}
+
+#pageCol3Resposive #header .fleche {
+  width: 70px;
+  height: 70px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+#pageCol3Resposive #header .fleche i {
+  text-align: center;
+  font-size: 26px;
+  transition: 0.5s;
+}
+
+#pageCol3Resposive #header .fleche:hover i {
+  letter-spacing: 20px;
+}
+
+#pageCol3Resposive #header .pdp {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 20px 10px;
+}
+
+#pageCol3Resposive #header h3 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#pageCol3Resposive #header p {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 300;
+  margin-top: -14px;
+  opacity: 65%;
+}
+
+#pageCol3Resposive #header .pdp img {
+  width: 100%;
+}
+
+#pageCol3Resposive #content {
+  width: 65%;
+  height: 660px;
+  background-color: #1a202f;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+#pageCol3Resposive #chat2 .soratra {
+  word-break: break-word;
+  width: 230px;
+}
+
+#pageCol3Resposive #chat1 .soratra {
+  word-break: break-word;
+  width: 230px;
+}
+
+#flecheResposnsive {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */
